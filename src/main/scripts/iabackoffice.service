@@ -1,0 +1,14 @@
+[Unit]
+Description=Income Insurance Backoffice Springboot Application
+After=syslog.target network.target
+
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/iabackoffice
+ExecStart=/bin/java -Xms1024m -Xmx1024m -jar demo-0.0.1-SNAPSHOT.jar SuccessExitStatus=143
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
