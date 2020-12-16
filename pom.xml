@@ -50,11 +50,11 @@
 					</execution>
 				</executions>
 				<configuration>
-					<license>NTUC Income</license>
+					<license>SRS</license>
 					<distribution>Test 1.0</distribution>
-					<group>Application/Income Insurance BackOffice</group>
+					<group>Application/SpringbootDemo</group>
 					<packager>Devops</packager>
-					<prefix>/opt/iabackoffice</prefix>
+					<prefix>/opt/springbootdemo</prefix>
 					<defineStatements>
 						<defineStatement>_unpackaged_files_terminate_build 0</defineStatement>
 					</defineStatements>
@@ -65,7 +65,7 @@
 					</requires>
 					<mappings>						
 						<mapping>
-							<directory>/opt/backend</directory>
+							<directory>/opt/springbootdemo</directory>
 							<filemode>755</filemode>
 							<username>root</username>
 							<sources>
